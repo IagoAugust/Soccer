@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+  background-color:#d1d1cd;
+}
+
+.clear{clear: both;}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* title  */
+
+.title h1{
+  font-size: 3.8rem;
+  margin-block: 2.5rem;
+  border-bottom: .1rem solid #000;
+  text-align: center;
+}
+
+/* soccer Fields */
+
+
+.soccer-fields{
+  background-image: url(./img/campo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80rem;
+  height: 60rem;
+  margin: 5rem auto 0;
+  
+}
+
+.soccer-fields h3{
+  font-size: 2.5rem;
+}
+
+.soccer-fields h3{  
+  padding-left: 1rem;
+  color: #000000;
+}
+
+.player{
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  width: 5rem;
+  height: 8rem;
+  position: relative;
+}
+
+.player img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.player .number{
+  position: relative;
+  top: 3rem;
+}
+
+.player p{
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.keeper{
+  right: 33rem;
+  top: 19rem;
+}
+
+.back-center{
+  top: 3rem;
+  right: 20rem;
+  
+}
+
+.back-left{
+  right: 15rem;
+  bottom: 3rem;
+}
+
+.back-right{
+  right: 15rem;
+  top: 8rem;
+}
+
+.midFielders-left{
+  bottom: 23rem;
+}
+
+.midFielders-right{
+  bottom: 15rem;
+}
+
+.winger-left{
+  left: 14rem;
+  bottom: 49.9rem;
+}
+
+.winger-right{
+  left: 14rem;
+  bottom: 15.9rem;
+}
+
+.striker{
+  left: 20rem;
+  bottom: 45rem;
+}
+
+
+/* Selection-players */
+
+.selection-players{
+  width: 60rem;
+  margin: 0 auto 4rem;
+  padding: 5rem 0;
+  background-color: #fff;
+  border: .1rem solid #3b3939;
+  border-radius: .3rem;
+  text-align: center;
+  /* display: none; */
+} 
+
+.view-elements{
+  /* display: inline-block; */
+}
+
+
+.selection-players .sub-title h3{
+  font-size: 2.5rem;
+  margin-bottom: .2rem;
+}
+
+.selection-players .sub-title p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;;
+  max-width: 80%;
+  margin: 1rem auto 2rem;
+  
+}
+
+.selection-players form  {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-players form div {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-players form label {
+  font-size: 1.5rem;
+}
+
+.selection-players form input {
+  width: 40%;
+  margin: 1rem auto 0;
+}
+
+.selection-players .container-btn{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.selection-players .btn {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #e0e0d8;
+  border: .1rem solid #000;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.selection-players .btn:hover {
+  background-color: #cbcbc9;
+}
+
+.selection-players .btn p {
+  font-size: 1.5rem;
+  padding-top: 2%;
+}

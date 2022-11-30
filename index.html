@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleção de times</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="title">
+      <h1>Seleção de times</h1>
+    </div>
+    <div class="selection-players view-elements  ">
+      <div class="sub-title">
+        <h3>Escalar Jogador</h3>
+        <p>Nos elementos abaixo escreva as característica que você deseja para esse novo jogador (Clique em um jogador para mudar sua informação)</p>
+      </div>
+      <form>
+        <div>
+          <label for="player-name" >Digite o nome do jogador:</label>
+          <input type="text" id="player-name" name="Name-Player"  >
+        </div>
+        <div>
+          <label for="number-shirt">Digite o numero da camiseta:</label>
+          <input type="number" id="number-shirt" name="name-shirt" >
+        </div>
+        <!-- <div>
+          <select>
+            <option selected disabled>Selecione a posição do jogador</option>
+            <option value="keeper">Goleiro</option>
+            <option >Defesa</option>
+            <option>Meio de Campo</option>
+            <option>Atacante</option>
+          </select>
+        </div>
+         -->
+        <div class="container-btn">
+          <button type="button" class="btn" onclick="clearDatePlayer()">Apagar</button>
+          <button type="button" class="btn" onclick="submitDatePlayer()">Escalar</button>
+        </div>
+      </form>
+    </div>
+    <div class="soccer-fields">
+      <h3>Time <span></span></h3>
+
+      <div class="player keeper " onclick="selectionPlayerAndViewElements('keeper-number','keeper-name')">
+        <div>
+          <div class="number">
+            <p id="keeper-number">1</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="keeper-name" class="player-name" >Goleiro</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player back-left" onclick="selectionPlayerAndViewElements('back-left-number','back-left-name')">
+        <div>
+          <div class="number">
+            <p id="back-left-number">2</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="back-left-name" class="player-name">Defesa</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player back-center" onclick="selectionPlayerAndViewElements('back-center-number','back-center-name')">
+        <div>
+          <div class="number">
+            <p id="back-center-number">3</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="back-center-name" class="player-name">defesa</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player back-right" onclick="selectionPlayerAndViewElements('back-right-number','back-right-name')">
+        <div>
+          <div class="number">
+            <p id="back-right-number">4</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="back-right-name" class="player-name">defesa</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player midFielders-left" onclick="selectionPlayerAndViewElements('midFielders-left-number','midFielders-left-name')">
+        <div>
+          <div class="number">
+            <p id="midFielders-left-number">5</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="midFielders-left-name" class="player-name">Meio de Campo</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player midFielders-right" onclick="selectionPlayerAndViewElements('midFielders-right-number','midFielders-right-name')">
+        <div>
+          <div class="number">
+            <p id="midFielders-right-number">6</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="midFielders-right-name" class="player-name">Meio de Campo</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player winger-right " onclick="selectionPlayerAndViewElements('winger-right-number','winger-right-name')">
+        <div>
+          <div class="number">
+            <p id="winger-right-number">7</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="winger-right-name" class="player-name">Atacante</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player winger-left " onclick="selectionPlayerAndViewElements('winger-left-number','winger-left-name')">
+        <div>
+          <div class="number">
+            <p id="winger-left-number">8</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="winger-left-name" class="player-name">Atacante</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="player striker " onclick="selectionPlayerAndViewElements('striker-number','striker-name')">
+        <div>
+          <div class="number">
+            <p id="striker-number">9</p>
+          </div>
+          <img src="./img/shirt-soccer.svg" alt="">
+          <p id="striker-name" class="player-name">Atacante</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
